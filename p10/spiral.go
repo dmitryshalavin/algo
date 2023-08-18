@@ -41,5 +41,5 @@ func spiral(n int) {
 }
 
 func main() {
-	spiral(5)
+	spiral(9)
 }
