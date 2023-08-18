@@ -14,8 +14,6 @@ func Primes(n int) []int {
 		}
 	}
 
-	fmt.Println(a)
-
 	res := []int{}
 	for i, v := range a[2:] {
 		if !v {
@@ -27,5 +25,5 @@ func Primes(n int) []int {
 }
 
 func main() {
-	fmt.Println(Primes(7))
+	fmt.Println(Primes(99))
 }
