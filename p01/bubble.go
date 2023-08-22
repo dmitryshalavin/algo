@@ -7,17 +7,17 @@ func bubbleSort(a []int) {
 		return
 	}
 
-	for i := 0; i < len(a); i++ {
-		for j := i + 1; j < len(a); j++ {
-			if a[i] > a[j] {
-				a[i], a[j] = a[j], a[i]
+	for i := 0; i < len(a)-1; i++ {
+		for j := 0; j < len(a)-1-i; j++ {
+			if a[j] > a[j+1] {
+				a[j], a[j+1] = a[j+1], a[j]
 			}
 		}
 	}
 }
 
 func main() {
-	a := []int{5, 1, 2, 7, 8, 3}
+	a := []int{5, 1, 2, 7, 8, 3, 1}
 	bubbleSort(a)
 	fmt.Println(a)
 }
